@@ -1,0 +1,182 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: 175%;
+    font-weight: 500;
+    color: #37352f;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    width: 100%;
+}
+a:hover {
+    display: inline-block;
+    text-decoration: none;
+    background: #DCDCDC;
+    border-radius: 3px;
+}
+a.button {  
+    line-height: 225%;
+    text-decoration: underline;
+    text-decoration-thickness: .2px;
+    text-underline-offset: 5px;
+    font-size: 16px;
+}
+.smaller {
+    font-size: 12px;
+}
+.heading1 {
+    font-size: 32px;
+}
+.text, .topbar {
+    color: #37352f;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fbfbfa;
+    outline-style: solid;
+    outline-width: .2px;
+    outline-color: #a3a29d;
+    padding: 1.5vh;
+    font-size: 15px;
+}
+.home-page, .vision-page, .habit-page, .goal-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.topbar {
+    height: 45px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 1.5vh;
+    background: white;
+}
+.header {
+    height: 30vh;
+    font-size: 40px;
+    padding-left: 10vh;
+    padding-top: 6vh;
+    font-weight: 600;
+}
+.header-emoji {
+    font-size: 80px;
+}
+.home-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.work {
+    flex: 1;
+    margin: 10vh 5vh 5vh 10vh;
+}
+.life {
+    flex: 1;
+    margin: 10vh 10vh 5vh 5vh;
+}
+
+.vision-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2vh;
+  justify-items: center;
+  align-items: center;
+  margin: 5vh 10vh 20vh 10vh;
+}
+.vision-pic {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.vision-pic img {
+  display: block;
+  width: 40vh;
+  height: 25vh;
+  object-fit: cover;
+}
+
+.habit-page, .goal-page, .buy-page, .task-page, .agenda-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.habit-content, .goal-content, .buy-content, .task-content, .agenda-content {
+    margin: 5vh 10vh 20vh 10vh;
+}
+.habit-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px;
+}
+
+.buy-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr repeat(5, 2fr);
+  gap: 1px;
+}
+
+.habit-item, .goal-item, .buy-item, .task-item, .agenda-item {
+  display: flex;
+  padding: 1vh;
+  outline-style: solid;
+  outline-width: .2px;
+  outline-color: #a3a29d;
+  font-size: 15px;
+  font-weight: 400;
+}
+.habit {
+  padding-left: 1vh;
+}
+input[type="checkbox"] {
+  margin: 0;
+  padding-left: 1vh;
+}
+
+.goal-first-row {
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+}
+.goal-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px;
+}
+
+.task-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 2fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px;
+}
+
+.agenda-container {
+  display: grid;
+  grid-template-columns: 1fr repeat(7, 2fr);
+  grid-template-rows: 1fr repeat(10, 3fr);
+  gap: 1px;
+}
+
+.grey {
+    color: #808080;
+    font-weight: 400;
+}
